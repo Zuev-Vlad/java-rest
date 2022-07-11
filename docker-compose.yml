@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  postgresdb:
+    image: postgres:13.5
+    ports:
+      - 5432:5432
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: first_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
